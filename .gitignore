@@ -1,0 +1,32 @@
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Build output
+dist/
+
+# Environment configuration
+.env
+
+# IDE files
+.vscode/
+.idea/
+
+# Testing
+coverage/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db

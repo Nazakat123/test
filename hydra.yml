@@ -1,0 +1,12 @@
+contracts:
+  farmerworld:
+    abi: farmerworld.abi
+    name: farmerworld
+    wasm: farmerworld.wasm
+  atomicassets:
+     abi: /home/nazakat/tutorial_contracts/atomicassets-contract-master/src/atomicassets.abi 
+     name: atomicassets
+     wasm: /home/nazakat/tutorial_contracts/atomicassets-contract-master/src/atomicassets.wasm
+ 
+
+options: null 

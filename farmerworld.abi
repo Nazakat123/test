@@ -1,0 +1,293 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "addenergy",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "food",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "addplayer",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "energy",
+                    "type": "uint32"
+                },
+                {
+                    "name": "wood",
+                    "type": "uint32"
+                },
+                {
+                    "name": "food",
+                    "type": "uint32"
+                },
+                {
+                    "name": "gold",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "createtool",
+            "base": "",
+            "fields": [
+                {
+                    "name": "contract_account",
+                    "type": "name"
+                },
+                {
+                    "name": "asset_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "owner",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "mine",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "tool_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "energy_consumed",
+                    "type": "uint64"
+                },
+                {
+                    "name": "durabilityDecrease",
+                    "type": "uint64"
+                },
+                {
+                    "name": "reward",
+                    "type": "uint64"
+                },
+                {
+                    "name": "chargeTime",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "player",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "energy",
+                    "type": "uint32"
+                },
+                {
+                    "name": "wood",
+                    "type": "uint32"
+                },
+                {
+                    "name": "food",
+                    "type": "uint32"
+                },
+                {
+                    "name": "gold",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "remove",
+            "base": "",
+            "fields": [
+                {
+                    "name": "toolOwner",
+                    "type": "name"
+                },
+                {
+                    "name": "tool_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "energy",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "removeplayer",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "repair",
+            "base": "",
+            "fields": [
+                {
+                    "name": "toolOwner",
+                    "type": "name"
+                },
+                {
+                    "name": "tool_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "gold",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "tool",
+            "base": "",
+            "fields": [
+                {
+                    "name": "tool_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "name": "img",
+                    "type": "string"
+                },
+                {
+                    "name": "rarity",
+                    "type": "string"
+                },
+                {
+                    "name": "level",
+                    "type": "uint64"
+                },
+                {
+                    "name": "type",
+                    "type": "string"
+                },
+                {
+                    "name": "is_wear",
+                    "type": "bool"
+                },
+                {
+                    "name": "durability",
+                    "type": "uint64"
+                },
+                {
+                    "name": "current_durability",
+                    "type": "uint64"
+                },
+                {
+                    "name": "lastChargeTime",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "weartool",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "tool_id",
+                    "type": "uint64"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "addenergy",
+            "type": "addenergy",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "addplayer",
+            "type": "addplayer",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "createtool",
+            "type": "createtool",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "mine",
+            "type": "mine",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "remove",
+            "type": "remove",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "removeplayer",
+            "type": "removeplayer",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "repair",
+            "type": "repair",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "weartool",
+            "type": "weartool",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "players",
+            "type": "player",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "toolslist",
+            "type": "tool",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "kv_tables": {},
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": []
+}
